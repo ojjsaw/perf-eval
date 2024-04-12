@@ -2,8 +2,7 @@
 
 ### Installation
 ```sh
-pip install ultralytics
-sudo apt-get update && sudo apt-get install -y libgl1 && sudo apt install -y libusb-1.0-0
+pip install ultralytics && sudo apt-get update && sudo apt-get install -y libgl1 && sudo apt install -y libusb-1.0-0
 
 wget https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco8.yaml
 wget https://ultralytics.com/assets/coco8.zip
