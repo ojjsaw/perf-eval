@@ -38,7 +38,9 @@ yolo detect benchmark model=yolov8s.pt data='coco8.yaml' imgsz=640 device=cpu ha
 
 ### util
 ```sh
-bash parse_run.sh yolov8s.pt False yolov8s_pytorch
+bash parse_run.sh yolov8s.pt False yolov8s_torchscript
+
+python summarize.py yolov8s_pytorch.json yolov8s_torchscript.json
 ```
 
 ### Yolo-v8
