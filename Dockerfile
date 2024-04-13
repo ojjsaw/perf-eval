@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     libgl1 \
     libusb-1.0-0 \
     libglib2.0-0 \
-    lsb_release \
+    lsb-release \
     python3 \
     python3-pip \
     python3-venv \
