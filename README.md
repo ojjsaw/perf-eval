@@ -36,6 +36,11 @@ yolo detect benchmark model=yolov8s.pt data='coco8.yaml' imgsz=640 device=cpu ha
 yolo detect benchmark model=yolov8s.pt data='coco8.yaml' imgsz=640 device=cpu half=False int8=True
 ```
 
+### util
+```sh
+bash parse_run.sh yolov8s.pt False yolov8s_pytorch
+```
+
 ### Yolo-v8
 | Framework  | FP32    | FP16    |  INT8    |
 | :---:      | :---:   | :---:   |  :---:   |
