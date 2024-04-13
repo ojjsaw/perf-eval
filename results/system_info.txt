@@ -1,0 +1,3 @@
+CPU: AMD EPYC 7763 64-Core Processor
+RAM: 7 GB
+OS: Ubuntu 22.04.4 LTS
