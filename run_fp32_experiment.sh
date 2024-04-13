@@ -43,5 +43,15 @@ for model in "${!model_types[@]}"; do
     process_model "${ARGS[0]}" "${ARGS[1]}" "${ARGS[2]}"
 done
 
+# Summarize task
 echo "Starting Comparison graphs export."
+python3 -m venv $VENV_DIR
+source $VENV_DIR/bin/activate
+pip install matplotlib
 python summarize.py yolov8s_pytorch.json yolov8s_torchscript.json yolov8s_tensorflow.json yolov8s_tflite.json yolov8s_openvino.json yolov8s_paddlepaddle.json yolov8s_onnx.json
+deactivate
+rm -rf $VENV_DIR
+rm -rf datasets
+rm *.npy
+rm *.json
+echo "Completed summarization and venv removed."

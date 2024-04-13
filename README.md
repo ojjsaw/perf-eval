@@ -38,9 +38,16 @@ yolo detect benchmark model=yolov8s.pt data='coco8.yaml' imgsz=640 device=cpu ha
 
 ### util
 ```sh
-bash parse_run.sh yolov8s.pt False yolov8s_torchscript
+bash parse_run.sh yolov8s.pt False yolov8s_pytorch && \
+bash parse_run.sh yolov8s.onnx False yolov8s_onnx && \
+bash parse_run.sh yolov8s_openvino_model False yolov8s_openvino && \
+bash parse_run.sh yolov8s_saved_model False yolov8s_tensorflow && \
+bash parse_run.sh yolov8s.torchscript False yolov8s_torchscript && \
+bash parse_run.sh yolov8s_saved_model/yolov8s_float32.tflite False yolov8s_tflite && \
+bash parse_run.sh yolov8s_paddle_model False yolov8s_paddlepaddle
 
-python summarize.py yolov8s_pytorch.json yolov8s_torchscript.json
+python summarize.py yolov8s_pytorch.json yolov8s_torchscript.json yolov8s_tensorflow.json yolov8s_tflite.json yolov8s_openvino.json yolov8s_paddlepaddle.json yolov8s_onnx.json
+
 ```
 
 ### Yolo-v8
