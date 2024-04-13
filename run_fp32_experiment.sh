@@ -52,6 +52,7 @@ python summarize.py yolov8s_pytorch.json yolov8s_torchscript.json yolov8s_tensor
 deactivate
 rm -rf $VENV_DIR
 rm -rf datasets
+rm -rf *_saved_model
 rm *.npy
 rm *.json
 echo "Completed summarization and venv removed."

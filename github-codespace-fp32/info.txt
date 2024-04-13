@@ -1,0 +1,5 @@
+AMD EPYC 7763 64-Core Processor
+2-core
+8GB RAM
+Ubuntu 20.04.6 LTS (focal)
+
