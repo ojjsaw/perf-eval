@@ -17,7 +17,7 @@ if [[ $output_file != *.json ]]; then
 fi
 
 # Run the command with the provided model name and half precision setting
-output=$(yolo detect val model=$model_name data=coco8.yaml imgsz=640 half=$half_boolean)
+output=$(yolo detect val model=$model_name data=coco8.yaml imgsz=640 half=$half_boolean device=cpu)
 
 # Extract inference time
 inference_time_line=$(echo "$output" | grep "inference")

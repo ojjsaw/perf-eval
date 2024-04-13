@@ -48,6 +48,9 @@ bash parse_run.sh yolov8s_paddle_model False yolov8s_paddlepaddle
 
 python summarize.py yolov8s_pytorch.json yolov8s_torchscript.json yolov8s_tensorflow.json yolov8s_tflite.json yolov8s_openvino.json yolov8s_paddlepaddle.json yolov8s_onnx.json
 
+docker build -t framework-eval .
+docker run --rm -v /results:/results framework-eval
+
 ```
 
 ### Yolo-v8
