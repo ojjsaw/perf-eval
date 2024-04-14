@@ -1,0 +1,3 @@
+CPU: AMD EPYC 9R14
+RAM: 7 GB
+OS: Ubuntu 22.04.4 LTS
