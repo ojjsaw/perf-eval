@@ -1,0 +1,3 @@
+CPU: Intel(R) Xeon(R) Platinum 8488C
+RAM: 7 GB
+OS: Ubuntu 22.04.4 LTS
